@@ -61,13 +61,17 @@
         </div>
         <div>
           <h2>Apply to work with us</h2>
-          <p class="form-note">This form is a placeholder and is not connected to a server yet. Nothing you enter is submitted or stored, and no message is sent. A studio email address will be listed on the Contact page once it is confirmed.</p>
-          <form action="#" method="post" onsubmit="return false;">
+          <p class="form-note">This form sends your application to <a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a>.</p>
+          <form action="https://formsubmit.co/tellvorastudio@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Tellvora Studio — creator partnership application">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://zefitkolish1-oss.github.io/rigright/thank-you.html">
             <label>Name
-              <input type="text" name="name" autocomplete="name">
+              <input type="text" name="name" autocomplete="name" required>
             </label>
             <label>Email
-              <input type="email" name="email" autocomplete="email">
+              <input type="email" name="email" autocomplete="email" required>
             </label>
             <label>Where you publish (YouTube, TikTok, Instagram, newsletter, other)
               <input type="text" name="channels">
@@ -87,7 +91,7 @@
             <label>A short description of the material you already have
               <textarea name="material"></textarea>
             </label>
-            <button class="btn" type="button">Send application — not yet connected</button>
+            <button class="btn" type="submit">Send application</button>
           </form>
         </div>
       </div>
@@ -100,6 +104,7 @@
         <div>
           <a class="wordmark" href="index.html">Tellvora Studio<span>Creator partnerships</span></a>
           <p style="margin-top:0.85rem">We turn a creator’s work into premium digital products. You keep your voice. We run the store.</p>
+          <p><a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a></p>
         </div>
         <div>
           <p class="kicker">Studio</p>
@@ -127,7 +132,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>This website is for creator partnerships. It is not a shop.</p>
+        <p>This website is for creator partnerships. It is not a shop. Email: <a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a></p>
         <p>&copy; 2026 Tellvora Studio. All rights reserved.</p>
       </div>
     </div>

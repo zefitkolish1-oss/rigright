@@ -32,14 +32,14 @@
       <div class="wrap">
         <p class="kicker">Contact</p>
         <h1>How to reach us.</h1>
-        <p>For a creator partnership, you can also use the form on the For Creators page. A studio email address will be listed here once it is confirmed. Please do not treat the remaining bracketed fields as live information.</p>
+        <p>For a creator partnership, you can also use the form on the For Creators page. Please do not treat the remaining bracketed fields as live information.</p>
       </div>
     </header>
     <section class="section">
       <div class="wrap split">
         <div>
           <h2>Details</h2>
-          <p><strong>Email</strong><br>A studio email address will be listed here once it is confirmed.</p>
+          <p><strong>Email</strong><br><a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a></p>
           <p><strong>Phone</strong><br><span class="placeholder-mark">[phone number]</span></p>
           <p><strong>Postal address</strong><br><span class="placeholder-mark">[street address]</span><br><span class="placeholder-mark">[city, postal code, country]</span></p>
           <p><strong>Legal entity</strong><br><span class="placeholder-mark">[legal entity name]</span></p>
@@ -47,13 +47,17 @@
         </div>
         <div>
           <h2>Write to us</h2>
-          <p class="form-note">This form is a placeholder and does not send a message yet.</p>
-          <form action="#" method="post" onsubmit="return false;">
+          <p class="form-note">This form sends a message to <a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a>.</p>
+          <form action="https://formsubmit.co/tellvorastudio@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Tellvora Studio — website message">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://zefitkolish1-oss.github.io/rigright/thank-you.html">
             <label>Your name
-              <input type="text" name="name" autocomplete="name">
+              <input type="text" name="name" autocomplete="name" required>
             </label>
             <label>Your email
-              <input type="email" name="email" autocomplete="email">
+              <input type="email" name="email" autocomplete="email" required>
             </label>
             <label>Subject
               <select name="subject">
@@ -65,7 +69,7 @@
             <label>Message
               <textarea name="message"></textarea>
             </label>
-            <button class="btn" type="button">Send message — not yet connected</button>
+            <button class="btn" type="submit">Send message</button>
           </form>
         </div>
       </div>
@@ -78,6 +82,7 @@
         <div>
           <a class="wordmark" href="index.html">Tellvora Studio<span>Creator partnerships</span></a>
           <p style="margin-top:0.85rem">We turn a creator’s work into premium digital products. You keep your voice. We run the store.</p>
+          <p><a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a></p>
         </div>
         <div>
           <p class="kicker">Studio</p>
@@ -105,7 +110,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>This website is for creator partnerships. It is not a shop.</p>
+        <p>This website is for creator partnerships. It is not a shop. Email: <a href="mailto:tellvorastudio@gmail.com">tellvorastudio@gmail.com</a></p>
         <p>&copy; 2026 Tellvora Studio. All rights reserved.</p>
       </div>
     </div>
