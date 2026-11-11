@@ -581,3 +581,101 @@ textarea { min-height: 8rem; resize: vertical; }
   .bundle-offer { padding: 1.15rem 1.05rem 0.9rem; }
   .guide-price .now { font-size: 1.7rem; }
 }
+
+/* Agency additions */
+.share-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.4rem 0 1.6rem;
+}
+.share-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  padding: 1.5rem 1.4rem 1.3rem;
+}
+.share-card .share-fig {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  line-height: 1;
+  color: var(--accent);
+  margin: 0 0 0.45rem;
+}
+.share-card .kicker { margin-bottom: 0.5rem; }
+.share-card p { margin: 0; color: var(--muted); font-size: 1rem; }
+.share-card.is-accent {
+  border-color: var(--accent);
+  background: #f6f1ea;
+}
+.who-list { margin: 0; padding: 0; list-style: none; }
+.who-list li {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+}
+.who-list li:last-child { border-bottom: 1px solid var(--rule); }
+.who-list strong { color: var(--ink); }
+
+.founder {
+  display: grid;
+  grid-template-columns: minmax(11rem, 16.5rem) 1fr;
+  gap: 2rem 2.6rem;
+  align-items: start;
+}
+.founder-portrait { margin: 0; }
+.founder-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--rule);
+  background: var(--paper-deep);
+}
+.founder-portrait figcaption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.45rem;
+}
+.founder .role {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.4rem;
+}
+
+.case-covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: 1.4rem 0 1.3rem;
+}
+.case-covers a { display: block; }
+.case-covers img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+.home-founder {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1.2rem 1.5rem;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  padding: 1.1rem 1.2rem;
+}
+.home-founder img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--rule);
+}
+
+@media (max-width: 720px) {
+  .share-grid, .founder, .case-covers, .home-founder { grid-template-columns: 1fr; }
+  .founder-portrait img { max-width: 16rem; }
+  .home-founder img { max-width: 7.5rem; }
+}
