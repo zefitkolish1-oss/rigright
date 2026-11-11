@@ -456,6 +456,24 @@ p { margin: 0 0 1em; }
   padding-right: 10.5rem;
 }
 
+
+/* What we can build */
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+.build-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.15rem 1.3rem;
+}
+.build-card .step-icon { margin-bottom: 0.85rem; }
+.build-card h3 { margin: 0 0 0.4rem; }
+.build-card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
 /* CTA band */
 .cta-band {
   margin: 1rem 0 4.2rem;
@@ -868,6 +886,7 @@ textarea { min-height: 8rem; resize: vertical; }
 
 @media (max-width: 1100px) {
   .guide-grid, .handle-grid { grid-template-columns: repeat(3, 1fr); }
+  .build-grid { grid-template-columns: 1fr 1fr; }
   .bundle-offer-inner { grid-template-columns: 1fr 1fr; }
   .bundle-cta { grid-column: 1 / -1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -876,7 +895,7 @@ textarea { min-height: 8rem; resize: vertical; }
   .section-head, .split, .grid-3, .hero-grid, .photo-band, .steps, .case-covers { grid-template-columns: 1fr 1fr; }
   .grid-3 .span-full { grid-column: 1 / -1; }
   .photo-band figure:nth-child(3) { grid-column: 1 / -1; }
-  .handle-grid { grid-template-columns: 1fr 1fr; }
+  .handle-grid, .build-grid { grid-template-columns: 1fr 1fr; }
   .about-panel .about-copy { padding-right: 0; padding-top: 3.4rem; }
 }
 @media (max-width: 720px) {
@@ -898,7 +917,7 @@ textarea { min-height: 8rem; resize: vertical; }
   .site-header { position: sticky; }
   .hero { padding: 2.4rem 0 3.2rem; }
   .section { padding: 2.6rem 0; }
-  .section-head, .split, .grid-3, .grid-2, .footer-grid, .hero-grid, .photo-band, .guide-grid, .bundle-offer-inner, .steps, .handle-grid, .share-grid, .case-covers { grid-template-columns: 1fr; }
+  .section-head, .split, .grid-3, .grid-2, .footer-grid, .hero-grid, .photo-band, .guide-grid, .bundle-offer-inner, .steps, .handle-grid, .share-grid, .case-covers, .build-grid { grid-template-columns: 1fr; }
   .header-inner { min-height: 3.8rem; }
   .bundle-offer { padding: 1.15rem 1.05rem 0.9rem; }
   .hero-visual figcaption { position: static; margin-top: 2.6rem; }
